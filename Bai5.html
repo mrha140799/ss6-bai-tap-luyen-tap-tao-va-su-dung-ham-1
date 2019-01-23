@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGym</title>
+    <script>
+        function showStar(name) {
+            let res = '';
+            let arrName = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+            let arrSao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+            for ( let i = 0 ; i < arrName.length ; i++) {
+                if (arrName[i] == name) {
+                    res = arrSao[i];
+                    break;
+                }
+            }
+            return res;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        let name = prompt("mời bạn nhập vào tên : ");
+        document.write(name +" có sao là : " + showStar(name));
+    </script>
+</body>
+</html>
